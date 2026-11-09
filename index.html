@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support Ticket Dashboard</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Support dashboard</h1>
+      <p class="sub" id="monthLabel"></p>
+    </div>
+    <div class="filters">
+      <label>Status
+        <select id="fStatus"><option value="all">All statuses</option><option value="open">Open</option><option value="progress">In progress</option><option value="solved">Solved</option><option value="overdue">Overdue</option></select></label>
+      <label>Priority
+        <select id="fPriority"><option value="all">All priorities</option><option value="urgent">Urgent</option><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option></select></label>
+      <label>Assignee
+        <select id="fAssignee"><option value="all">Everyone</option><option>Amina Rahman</option><option>Daniel Ortiz</option><option>Priya Nair</option><option>Lucas Meyer</option></select></label>
+      <label>Date range
+        <select id="fRange"><option value="month">This month</option><option value="week">Last 7 days</option></select></label>
+    </div>
+  </header>
+
+  <main id="content" class="col" aria-live="polite" aria-busy="true">
+    <div class="row">
+      <div class="sk" style="flex:1 1 170px;height:112px"></div><div class="sk" style="flex:1 1 170px;height:112px"></div><div class="sk" style="flex:1 1 170px;height:112px"></div><div class="sk" style="flex:1 1 170px;height:112px"></div><div class="sk" style="flex:1 1 170px;height:112px"></div>
+    </div>
+    <div class="sk" style="height:300px"></div>
+    <div class="sk" style="height:360px"></div>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
